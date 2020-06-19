@@ -1,0 +1,15 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
+server:
+  port: 12000
+spring:
+  application:
+    name: feign-api
+# 开启熔断
+#feign:
+#  hystrix:
+#    enabled: true
+#  httpclient:
+#    connection-timeout: 5000
