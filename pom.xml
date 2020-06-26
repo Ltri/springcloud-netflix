@@ -17,6 +17,9 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <fastjson.version>1.2.62</fastjson.version>
+        <mysql.version>8.0.19</mysql.version>
+        <mybatisplus.version>3.3.0</mybatisplus.version>
     </properties>
 
     <modules>
@@ -25,6 +28,7 @@
         <module>zuul-server</module>
         <module>feign-api</module>
         <module>hystrix-api</module>
+        <module>ribbon-api</module>
     </modules>
 
     <dependencies>
@@ -62,6 +66,22 @@
                 <version>Hoxton.SR5</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatisplus.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -6,10 +6,11 @@
         <groupId>com.ltri</groupId>
         <artifactId>springcloud-netflix</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>user-api</artifactId>
-    <name>user-api</name>
+    <artifactId>ribbon-api</artifactId>
+    <name>ribbon-api</name>
 
     <properties>
         <java.version>1.8</java.version>
@@ -21,12 +22,8 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
     </dependencies>
 
